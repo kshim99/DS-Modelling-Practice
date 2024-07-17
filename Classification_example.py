@@ -1,6 +1,9 @@
 import pandas as pd
 import altair as alt
 
-cancer = pd.read_csv("data/wdbc.data")
+# Read in Data
+cancer = pd.read_csv("data/wdbc.csv")
+# Check format with first few rows
+print(cancer.head(5))
 
-#names = ["ID","Class","Radius","Texture","Perimeter","Area","Smoothness","Compactness","Concavity","Concave_Points","Symmetry","Fractal_Dimension"])
+
