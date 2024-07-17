@@ -6,4 +6,7 @@ cancer = pd.read_csv("data/wdbc.csv")
 # Check format with first few rows
 print(cancer.head(5))
 
+# Change label names
+cancer["Class"] = cancer["Class"].replace({"M": "Malignant","B":"Benign"})
+
 
